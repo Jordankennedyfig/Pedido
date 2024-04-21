@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo?</title>
+
+    <style>
+        body{
+            background-color: rgb(127, 182, 255);
+        }
+        
+        .painel{
+            margin: auto;
+            height: 600px;
+            width: 800px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        #sim {
+           
+            height: 40px;
+            width: 60px;
+            background-color: rgb(24, 102, 204);
+            border: 2px solid white;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            margin-left: -50px;
+
+
+        }
+        
+        #nao{
+            position: absolute;
+            margin-left: 10px;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(24, 102, 204);
+            border:  2px solid white;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="painel"> 
+     <h1>Quer namorar comigo?</h1>
+     
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZyank5bDcya3g0c3hhejg0am01bDRiYzBiamk2MXNxN29wdDFkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IusWWujSbZSXZdRTWe/giphy.gif" alt="">
+
+     <h2>Aceitas?</h2>
+
+     <a href="https://www.youtube.com/watch?v=0mJMW2CzTiA"><button id="sim">Sim</button></a>
+     <button onmouseover ="fuja()" id="nao">Nao</button>
+             
+    </div>
+
+   
+          <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    </script>
+</body>
+</html>
