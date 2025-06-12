@@ -8,29 +8,31 @@
 
     <style>
         body{
-            background-color: rgb(127, 182, 255);
+            background-color: rgba(127, 182, 255, 0);
         }
         
         .painel{
             margin: auto;
-            height: 600px;
-            width: 800px;
-            background-color: rgb(245, 245, 245);
+            height: 700px;
+            width: 900px;
+            background-color: #F19CA5;
             border-radius: 20px;
             text-align: center;
             padding-top: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         
         #sim {
            
-            height: 40px;
-            width: 60px;
-            background-color: rgb(24, 102, 204);
-            border: 2px solid white;
+            height: 50px;
+            width: 120px;
+            background-color: #ff0033;
+            border: 2px solid rgb(255, 255, 255);
             border-radius: 10px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             margin-left: -50px;
+            margin-top: 10px;
+            font-size: larger;
+            
 
 
         }
@@ -38,24 +40,40 @@
         #nao{
             position: absolute;
             margin-left: 10px;
-            height: 40px;
-            width: 60px;
-            background-color: rgb(24, 102, 204);
+            height: 50px;
+            width: 120px;
+            background-color: #ff0235;
             border:  2px solid white;
             border-radius: 10px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+            font-size: larger;
 
         }
+        h1, h2 {
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .cu {
+            
+            background-color: #E95975;
+            width: 30%; 
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+    
     </style>
 
 </head>
 <body>
     <div class="painel"> 
-     <h1>Quer namorar comigo?</h1>
+     <h1>FELIZ DIA DOS NAMORADOS, MI NOVIA!</h1>
+     <h2>SOU MUITO FELIZ POR DIVIDIR A VIDA COM VOCÊ!</h2>
      
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZyank5bDcya3g0c3hhejg0am01bDRiYzBiamk2MXNxN29wdDFkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IusWWujSbZSXZdRTWe/giphy.gif" alt="">
+     
+    <img src="https://img1.picmix.com/output/pic/normal/1/1/8/5/10735811_56696.gif" alt="">
 
-     <h2>Aceitas?</h2>
+     <h2 class="cu">Cuzin ?????</h2>
 
      <a href="https://www.youtube.com/watch?v=0mJMW2CzTiA"><button id="sim">Sim</button></a>
      <button onmouseover ="fuja()" id="nao">Nao</button>
